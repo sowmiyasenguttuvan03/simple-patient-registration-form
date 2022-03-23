@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/87ec4b99cf.js" crossorigin="anonymous"></script>
+    <style>
+        #abc{
+            background-color: white;
+	        color:black;
+	        padding:10px;
+	        margin-right:500px;
+	        margin-left:500px;
+            border: 20px solid #0cecb4;
+        }
+        #form{
+	        color:black;
+	        padding:15px;
+	        font-size:25;
+            text-align: center;
+            background-color: azure;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;    
+        }
+        .ab{
+	        color: black;
+            text-align: center;
+            background-color: azure;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;    
+        }
+        p{
+	        text-align:center;
+	        font-size:25;
+        }
+        h1{
+            font-family: 'Lobster', cursive;
+            font-family: 'Luckiest Guy', cursive;
+            font-family: 'Special Elite', cursive;
+        }
+        input{
+    	    height:36px;
+            width: 300px;
+            background-color:white;
+            font-size: 16px;
+        }
+        body{
+          	background-image:url("https://thumbs.dreamstime.com/b/doctor-protective-form-fills-out-patient-registration-gray-background-copy-space-212405808.jpg") ;
+	        background-repeat: no-repeat;
+            margin-top: 150px;
+            background-size: cover;
+        }
+        
+        img{
+        height:70px;
+        width:70px;
+        padding: 8px;
+       }
+
+    </style>
+</head>
+<body>
+    <H1 style="margin-top: -120PX; font-size: 60px;">ABC HOSPITAL</H1>
+
+    <div id="abc">
+    <h1 class="ab" STYLE="font-size:250%;">PATIENT REGISTRATION FORM</H1>
+        <div class="bb">
+        <h3 class="ab" style="text-align:left; margin-left: 101px;">Please fill in this form for your registration</h3>
+        <form id="form"  name="sign" method="post" action="patient.php">
+                <input style="margin-left: -305px;" type="text" id="name" name="name" placeholder="Name" required><br><br><br>
+
+                <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+
+                <input type="text" id="age" name="age" placeholder="Age" required><br><br><br>
+
+                <lable style="font-size: 16px; margin-left: -5px;">Gender :</lable>
+                <input style="width: 15px; height: 15px;" type="radio" id="gender" name="gender" value="FEMALE">
+                <label for="gender">Female</label>
+                <input style="width: 15px; height: 15px;" type="radio" id="gender" name="gender" value="MALE">
+                <label for="gender">Male</label>
+
+                <lable style="margin-left: 100px;">Marital Status :</lable>
+                <input style="width: 15px; height: 15px;" type="radio" id="status" name="marital_status" VALUE="MARRIED">
+                <label for="marital_status">Married</label>
+                <input style="width: 15px; height: 15px;" type="radio" id="status" name="marital_status" VALUE="UNMARRIED">
+                <label for="marital_status">Unmarried</label><br> <br><br>
+
+                <input style="width: 600px; height: 70px; padding: 10px;" type="text" id="address" name="address" placeholder="Address" required><br><br><br>
+
+                <input style="width: 195px;" type="text" id="city" name="city" placeholder="City" required>
+
+                <input style="width: 195px;" type="text" id="state" name="state" placeholder="State" required>
+
+                <input style="width: 195px;"type="text" id="pincode" name="pincode" placeholder="Pincode" required><br><br><br>
+
+                <input type="text" id="email" name="email" placeholder="Email" required>
+
+                <input type="text" id="mobile" name="mobile"  placeholder="Mobile" required><br><br><br>
+
+            <input style="width: 15px; height: 15px;" type="checkbox" name="policy"><label> I accept the Terms of Use & Privacy Policy.</label><br><br>
+            <input style="background-color: #0cecb4;"type="Submit" value="Submit" class="btn" height="40" width="40">
+            
+        </form>
+        </div>
+        </div>
+</body>
+</html>
